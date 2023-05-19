@@ -434,6 +434,7 @@ footer{
     height: 300px;
     object-fit: cover;
     object-position: center;
+    border-radius: 5px;
 }
 .texto-logros{
     color: white;
@@ -520,10 +521,4 @@ footer{
     font-family: 'Open Sans', sans-serif;
     font-size: medium;
     text-align: center;
-}
-.borja{
-    width: 1000px;
-    height: 500px;
-    object-fit: cover;
-    object-position: center;
 }
