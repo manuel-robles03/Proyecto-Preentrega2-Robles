@@ -282,6 +282,7 @@ footer{
     's1 s2 s3 s4'
     ;
     gap: 10px;
+    padding: 30px;
 }
 .imagen{
     display: flex;
@@ -366,6 +367,7 @@ footer{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        padding: 10px;
     }
     .imagen-demichelis{
         width: 100%;
