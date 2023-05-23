@@ -251,7 +251,12 @@ footer{
         object-fit: contain;
     }
     .titulo-noticia{
-        font-size: large;
+        font-size: medium;
+        font-weight: 800;
+    }
+    .noticias{
+        justify-content: center;
+        align-items: center;
     }
     .texto-noticia{
         font-size: x-small;
