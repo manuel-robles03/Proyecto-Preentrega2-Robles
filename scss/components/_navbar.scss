@@ -1,0 +1,40 @@
+.bg-personalizado{
+    display: flex;
+    justify-content: space-between;
+    background-color: $main-color;
+}
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link{
+    color: $light-color;
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.8s;
+    padding: 5px;
+}
+.nav-link:hover{
+    color: $light-color;
+    background-color:  rgb(44, 43, 43);
+}
+.navbar-toggler{
+    width: 46px;
+    height: 35px;
+}
+.navbar-toggler-icon{
+    width: 20px;
+    height: 20px;
+    object-position: center;
+}
+.navbar-nav{
+    gap: 20px;
+}
+.escudo-navbar{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+}

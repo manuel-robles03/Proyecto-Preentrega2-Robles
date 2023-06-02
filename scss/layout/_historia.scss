@@ -1,0 +1,89 @@
+.historia{
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'p1 p2 p3 p4'
+    's1 s2 s3 s4'
+    ;
+    gap: 10px;
+    padding: 30px;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 300px;
+}
+.texto-historia{
+    color: $light-color;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+}
+.box{
+    background-color: rgba(139, 139, 139, 0.658);
+    border-radius: 5px;
+    padding: 10px;
+}
+.fundacion{
+    display: flex;
+    flex-direction: column;
+    grid-area: p1;
+}
+.primer-estadio{
+    display: flex;
+    flex-direction: column;
+    grid-area: p2;
+}
+.la-maquina{
+    display: flex;
+    flex-direction: column;
+    grid-area: p3;  
+}
+.primer-monumental{
+    display: flex;
+    flex-direction: column;
+    grid-area: p4;
+}
+
+.primera-libertadores{
+    display: flex;
+    flex-direction: column;
+    grid-area: s1;
+}
+.segunda-libertadores{
+    display: flex;
+    flex-direction: column; 
+    grid-area: s2;
+}
+.descenso{
+    display: flex;
+    flex-direction: column;
+    grid-area: s3;  
+}
+.gallardo{
+    display: flex;
+    flex-direction: column;
+    grid-area: s4;
+}
+.presentacion-demichelis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+.imagen-demichelis{
+    border-radius: 5px;
+    border: solid rgb(168, 168, 168);
+}
+.texto-demichelis-presentacion{
+    color: $light-color;
+    font-family: 'Open Sans', sans-serif;
+    font-size:x-large;
+    text-align: center;
+}

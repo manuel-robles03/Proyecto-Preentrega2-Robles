@@ -1,0 +1,35 @@
+.datos-partido{
+    color: $light-color;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 300px;
+}
+.partido{
+    display: flex;
+    flex-direction: column;
+}
+.partidos-primer-fila{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+.partidos-segunda-fila{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+.mas-partidos{
+    color: $light-color;
+    text-decoration: underline;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}

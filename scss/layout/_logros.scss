@@ -1,0 +1,81 @@
+.texto-final-madrid{
+    color: $light-color;
+    font-family: 'Arial', sans-serif ;
+    font-size:medium;
+    text-align: justify; 
+    width: 1750px;
+    padding-top: 10px;
+}
+.final-madrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.video-madrid{
+    padding-top: 50px;
+}
+.sudamericana-2014{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.libertadores-2015{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intercontinental{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.libertadores-1996{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logros{
+    padding: 30px;
+}
+.logros:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.titulo-logros{
+    color: $main-color;
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+}
+.imagen-logros{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+.texto-logros{
+    color: $light-color;
+    font-family: 'Arial', sans-serif ;
+    font-size:medium;
+    text-align: justify; 
+    font-weight: bold;
+    width: 1000px;
+}
+.dos-textos-logros{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.ultimo-texto-logros{
+    color: $main-color;
+    width: 95%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 15px;
+}

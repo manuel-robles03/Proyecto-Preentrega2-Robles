@@ -1,0 +1,100 @@
+@media (max-width:480px){
+
+    .container-fluid .escudo-river-arriba{
+        width: 200px;
+        object-fit: contain;
+        padding: 0;
+    }
+    .river-blanco{
+        width: 100px;
+        height: 50px;
+        object-fit: contain;
+        padding: 0;
+    }
+    .red{
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+    .r2{
+        width: 15px;
+        height: 15px;
+    }
+    .titulo{
+        font-size:medium;
+        padding-top: 0px;
+    }
+    .carousel-item img{
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 5px;
+    }
+    .accesos{
+        padding: 15px;
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .ubicacion{
+        flex-direction: column;
+    }
+    .mapa-estadio{
+        width: 100%;
+        padding: 15px 15px;
+    }
+    .entrada-estadio{
+        font-size:small;
+        text-align: center;
+    }
+    .sponsor{
+        height: 70px;
+        width: 90px;
+        object-fit: contain;
+    }
+    .titulo-noticia{
+        font-size: medium;
+        font-weight: 800;
+    }
+    .noticias{
+        justify-content: center;
+        align-items: center;
+    }
+    .texto-noticia{
+        font-size: x-small;
+        width: 200px;
+    }
+    .dos-textos-independiente{
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+    .foto-noticia{
+        object-fit: cover;
+        object-position: center;
+        width: 150px;
+    }
+    .foto-ind{
+        object-position: left;
+    }
+
+}
+
+
+
+@media (max-width:480px){
+    .historia{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .imagen-demichelis{
+        width: 100%;
+        object-fit: contain;
+        object-position: right;
+    }
+    .texto-demichelis-presentacion{
+        font-size: small;
+    }
+}

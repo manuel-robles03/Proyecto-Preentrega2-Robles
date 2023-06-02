@@ -1,0 +1,28 @@
+.formulario{
+    display: flex;
+    background-image: url(../assets/fondo.formulario.jpg);
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.campo{
+    padding: 8px;
+}
+.boton{
+    background-color: $main-color;
+    color: white;
+}
+#boton{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.ultimo-texto-contacto{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    text-align: center;
+}

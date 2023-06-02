@@ -1,0 +1,127 @@
+main{
+    background-image: url(../assets/monumental.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 20px;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: $light-color;
+    padding: 10px 10px;
+    text-align: center;
+    width: 100%;
+}
+.carousel-item{
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+.monumental{
+    object-fit: cover;
+    z-index: 1;
+    position: center;
+    background-position: center;
+}
+
+.accesos h2{
+    text-align: center;
+    font-weight: bolder;
+}
+.mapa-estadio{
+    width: 100%;
+    padding: 30px;
+}
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.entrada-estadio{
+    color: $light-color;
+    font-size:xx-large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.accesos{
+    background-color: $main-color;
+    color: $light-color;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    font-size:xx-large;
+    font-weight:bolder;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.logos-sponsors{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.sponsor{
+    border: transparent;
+    border-radius: 5px;
+    transition: 1s;
+}
+.sponsor:hover{
+    background-color: rgba(170, 170, 170, 0.603);
+}
+.noticias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foto-noticia{
+    object-fit: cover;
+    border-radius: 5px;
+}
+.partido-contra-independiente{
+    display: flex;
+    padding-top: 10px;
+}
+.dos-textos-independiente{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+.texto-noticia{
+    color: $light-color;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: start;
+    display:flex;
+    flex-direction: row;
+}
+.titulo-noticia{
+    color: $main-color;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: xx-large;
+}
+.tucuman{
+    display: flex;
+    flex-direction:row-reverse
+}
+.tucuman{
+    padding: 15px;
+}
+.dos-textos-tucuman{
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    justify-content: center;
+    align-items: center;
+}
