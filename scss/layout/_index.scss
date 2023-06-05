@@ -8,7 +8,7 @@ main{
 .titulo{
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: $main-font;
     font-weight: 800;
     color: $light-color;
     padding: 10px 10px;
@@ -36,29 +36,24 @@ main{
     padding: 30px;
 }
 .ubicacion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-flex (row, center, center, wrap, 0);
 }
 .entrada-estadio{
     color: $light-color;
     font-size:xx-large;
-    font-family: 'Roboto', sans-serif;
+    font-family: $main-font;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-self: center;
+    text-align: center;
+    @include display-flex (row, center, center, wrap, 0);
 }
 .accesos{
     background-color: $main-color;
     color: $light-color;
-    font-family: 'Roboto', sans-serif;
+    font-family: $main-font;
     padding: 30px;
     font-size:xx-large;
     font-weight:bolder;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include display-flex (row, center, center, wrap, 0);
     margin-top: 30px;
 }
 .logos-sponsors{
@@ -76,10 +71,7 @@ main{
     background-color: rgba(170, 170, 170, 0.603);
 }
 .noticias{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include display-flex (row, center, center, wrap, 0);
 }
 .foto-noticia{
     object-fit: cover;
@@ -90,25 +82,21 @@ main{
     padding-top: 10px;
 }
 .dos-textos-independiente{
-    display: flex;
-    flex-direction: column;
+    @include display-flex (column, center, center, wrap, 0);
     padding-left: 5px;
 }
 .texto-noticia{
     color: $light-color;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $secondary-font;
     font-weight: 700;
     text-align: start;
-    display:flex;
-    flex-direction: row;
+    @include display-flex (row, center, center, wrap, 0);
 }
 .titulo-noticia{
     color: $main-color;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $secondary-font;
     font-weight: bolder;
-    display: flex;
-    justify-content: center;
-    align-self: center;
+    @include display-flex (row, center, center, wrap, 0);
     font-size: xx-large;
 }
 .tucuman{
@@ -119,9 +107,6 @@ main{
     padding: 15px;
 }
 .dos-textos-tucuman{
-    display: flex;
-    flex-direction: column;
+    @include display-flex (column, center, center, wrap, 0);
     padding-right: 5px;
-    justify-content: center;
-    align-items: center;
 }

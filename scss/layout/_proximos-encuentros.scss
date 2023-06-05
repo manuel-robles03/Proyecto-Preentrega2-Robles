@@ -1,28 +1,18 @@
 .datos-partido{
     color: $light-color;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $secondary-font;
     font-size: medium;
     text-align: center;
-    display: flex;
-    justify-content: center;
+    @include display-flex (row, center, center, nowrap, 0);
     align-self: center;
-    align-items: center;
     width: 300px;
 }
 .partido{
     display: flex;
     flex-direction: column;
 }
-.partidos-primer-fila{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 500px;
-}
-.partidos-segunda-fila{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.partidos{
+    @include display-flex (row, space-evenly, center, nowrap, 0);
     height: 500px;
 }
 .mas-partidos{
@@ -31,5 +21,5 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $secondary-font;
 }

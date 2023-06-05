@@ -125,8 +125,11 @@ main {
 
 .ubicacion {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
 }
 
 .entrada-estadio {
@@ -134,9 +137,13 @@ main {
   font-size: xx-large;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  text-align: center;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-self: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
 }
 
 .accesos {
@@ -147,8 +154,11 @@ main {
   font-size: xx-large;
   font-weight: bolder;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 0;
   margin-top: 30px;
 }
 
@@ -171,9 +181,11 @@ main {
 
 .noticias {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
 }
 
 .foto-noticia {
@@ -189,6 +201,10 @@ main {
 .dos-textos-independiente {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
   padding-left: 5px;
 }
 
@@ -199,6 +215,10 @@ main {
   text-align: start;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
 }
 
 .titulo-noticia {
@@ -206,8 +226,11 @@ main {
   font-family: "Open Sans", sans-serif;
   font-weight: bolder;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-self: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
   font-size: xx-large;
 }
 
@@ -223,9 +246,11 @@ main {
 .dos-textos-tucuman {
   display: flex;
   flex-direction: column;
-  padding-right: 5px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+  padding-right: 5px;
 }
 
 .historia {
@@ -239,12 +264,15 @@ main {
 
 .imagen {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-self: center;
-  object-fit: cover;
-  object-position: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
   width: 100%;
   height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .texto-historia {
@@ -264,24 +292,40 @@ main {
 .fundacion {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
   grid-area: p1;
 }
 
 .primer-estadio {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
   grid-area: p2;
 }
 
 .la-maquina {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
   grid-area: p3;
 }
 
 .primer-monumental {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
   grid-area: p4;
 }
 
@@ -294,25 +338,40 @@ main {
 .segunda-libertadores {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
   grid-area: s2;
 }
 
 .descenso {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
   grid-area: s3;
 }
 
 .gallardo {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
   grid-area: s4;
 }
 
 .presentacion-demichelis {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
   padding-top: 15px;
 }
 
@@ -330,11 +389,12 @@ main {
 
 .texto-final-madrid {
   color: white;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: medium;
   text-align: justify;
-  width: 1750px;
+  font-weight: 700;
   padding-top: 10px;
+  width: 94%;
 }
 
 .final-madrid {
@@ -342,38 +402,23 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
 }
 
 .video-madrid {
   padding-top: 50px;
 }
 
-.sudamericana-2014 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.libertadores-2015 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.intercontinental {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.libertadores-1996 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .logros {
   padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  width: 100%;
 }
 
 .logros:nth-child(odd) {
@@ -399,7 +444,7 @@ main {
 
 .texto-logros {
   color: white;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: medium;
   text-align: justify;
   font-weight: bold;
@@ -429,9 +474,12 @@ main {
   font-size: medium;
   text-align: center;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-self: center;
   align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  align-self: center;
   width: 300px;
 }
 
@@ -440,17 +488,13 @@ main {
   flex-direction: column;
 }
 
-.partidos-primer-fila {
+.partidos {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 500px;
-}
-
-.partidos-segunda-fila {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
   height: 500px;
 }
 
@@ -464,14 +508,27 @@ main {
 }
 
 .formulario {
-  display: flex;
-  background-image: url(../assets/fondo.formulario.jpg);
-  background-position: center;
-  object-fit: cover;
-  background-repeat: no-repeat;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  background-image: url(../assets/fondo.formulario.jpg);
+  background-repeat: no-repeat;
+  object-position: center;
+  background-position: center;
+  height: 700px;
 }
 
 .campo {
@@ -494,6 +551,7 @@ main {
   font-family: "Open Sans", sans-serif;
   font-size: medium;
   text-align: center;
+  padding: 50px;
 }
 
 @media (max-width: 480px) {

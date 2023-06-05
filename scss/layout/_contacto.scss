@@ -1,12 +1,14 @@
 .formulario{
-    display: flex;
-    background-image: url(../assets/fondo.formulario.jpg);
-    background-position: center;
-    object-fit: cover;
-    background-repeat: no-repeat;
     border-radius: 5px;
-    justify-content: center;
-    align-items: center;
+    @include display-flex (column, center, center, nowrap, 0);
+}
+.contacto{
+    @include display-flex (row, center, center, nowrap, 0);
+    background-image: url(../assets/fondo.formulario.jpg);
+    background-repeat: no-repeat;
+    object-position: center;
+    background-position: center;
+    height: 700px;
 }
 .campo{
     padding: 8px;
@@ -22,7 +24,8 @@
 }
 .ultimo-texto-contacto{
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $secondary-font;
     font-size: medium;
     text-align: center;
+    padding: 50px;
 }
