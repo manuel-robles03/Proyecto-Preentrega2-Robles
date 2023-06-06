@@ -1,24 +1,27 @@
+
 .bg-personalizado{
     display: flex;
     justify-content: space-between;
     background-color: $main-color;
 }
 .nav-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    list-style-type: none;
+    padding: 15px;
+    transition: 0.8;
 }
 .nav-link{
     color: $light-color;
     font-family:'Roboto', sans-serif;
     font-weight: bold;
-    border-radius: 5px;
-    transition: 0.8s;
-    padding: 5px;
+    border: transparent;
+    transition: 0.5s;
+    text-align: center;
+    padding: 0;
 }
 .nav-link:hover{
     color: $light-color;
-    background-color:  $secondary-color;
+    border-bottom: solid 3px $secondary-color;
+    transform: scale(1.1,1.1);
 }
 .navbar-toggler{
     width: 46px;
@@ -28,9 +31,6 @@
     width: 20px;
     height: 20px;
     object-position: center;
-}
-.navbar-nav{
-    gap: 20px;
 }
 .escudo-navbar{
     width: 200px;

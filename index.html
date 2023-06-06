@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title> Inicio - Club Atlético River Plate</title>
 </head>
@@ -47,11 +48,9 @@
  </header>
 
     <main>
-        <div>
-            <h1 class="titulo">
-            BIENVENIDO/A A LA PÁGINA DEL MÁS GRANDE DE SUDAMÉRICA 
-            </h1>
-        </div>
+        
+        <h1 class="titulo"> BIENVENIDO/A A LA PÁGINA DEL MÁS GRANDE DE SUDAMÉRICA </h1>
+        <section>
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active data-bs-interval=1">
@@ -72,15 +71,17 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-              </div>        
-        <div>
-            <h2 class="accesos">UBICACIÓN DEL ESTADIO Y ACCESOS PARA LOS DÍAS DE PARTIDO</h2>
-        </div>
-<section class="ubicacion">
+              </div> 
+              <div>
+                <p class="texto-index">El Club Atlético River Plate es uno de los clubes más grandes de la Argentina y de América. Cuenta con un estadio para aproximadamente 86.000 personas, convirtiendose en el estadio más grande de Latinoamérica. Cuenta con muchas instalaciones para el uso y beneficio de todos los socios que pagan su cuota mensual. Todas las instalaciones principales están ubicadas en los alrededores del estadio, en la zona de Nuñez, muy cerca del Río de la Plata. Pero también cuenta con instalaciones para el uso de las categorías inferiores, en la zona de Hurlingham y otras en Ezeiza. Por lo general, en las instalaciones de Ezeiza se desarrollan los partidos de las categorías inferiores y los entrenamientos del plantel profesional. En Hurlingham se desarrollan solo los entrenamientos de las categorías inferiores e infantiles. La historia de este grandísimo club es muy amplia, y en esta página queremos mostrarte un poco de lo que fue y es el Club Atlético River Plate.</p>  
+            </div>     
+        </section>
+        <h2 class="accesos">UBICACIÓN DEL ESTADIO Y ACCESOS PARA LOS DÍAS DE PARTIDO</h2>
+        
+        <div class="ubicacion" data-aos="zoom-in">
             <iframe class="mapa-estadio" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.325947947406!2d-58.45234982334489!3d-34.545301754417174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae6018ddf%3A0x3d7f60a75bfa308a!2sEstadio%20M%C3%A2s%20Monumental!5e0!3m2!1ses-419!2sar!4v1682450631209!5m2!1ses-419!2sar" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p class="entrada-estadio"> Por Barilari y Avenida del Libertador tienen el acceso a las tribunas Belgrano y Centenario Alta y Baja. Por Libertador y Udaondo tienen el acceso para las tribunas Belgrano y Sívori. Por Figueroa Alcorta y Monroe tienen el acceso para las tribunas San Martín y Centenario Media. </p>
-    </div>
-</section>
+        </div>
 
 <div class="logos-sponsors">
     <p><a href="https://www.adidas.com.ar/"><img class="sponsor" src="assets/adidas-logo.png" alt="logo de adidas"> </p></a>
@@ -90,14 +91,14 @@
     <p><a href="https://www.assistcard.com/ar/b2c/river-plate"><img class="sponsor" src="assets/assist-card-logo.png" alt="logo assist card"></a> </p>
 </div>
 <section class="noticias">
-<div class="partido-contra-independiente">
+<div class="partido-contra-independiente" data-aos="zoom-in">
     <img class="foto-noticia foto-ind" src="assets/contra-independiente.jpg" alt="jugadores de river contra independiente">
     <div class="dos-textos-independiente">
         <p class="titulo-noticia"> LA BANDA ROJA LE GANÓ EL DUELO A LOS DIABLOS ROJOS</p>
         <p class="texto-noticia"> El conjunto de Martín Demichelis tuvo una dura parada contra el elenco de Avellaneda, que no viene en una buena etapa de su historia. Abrió el marcador Esequiel Barco (ex independiente) con un golazo de afuera del área, pidiendo perdón en su festejo de gol justamente por lo mencionado. Luego independiente le hizo un partido duro y parejo a la banda, pero con la expulsión de Damián Perez por doble amarilla todo iba a cambiar. El conjunto millonario fue a buscar más cantidad de goles para asegurar el partido y es ahí cuando el colombiano Miguel Ángel Borja le ganó una batalla física al defensor del rojo Sergio Damián Barreto y define al segundo palo del arquero para sellar el partido 2-0. Victoria importante de la banda como local para seguir trepado en la cima. </p>
     </div>
 </div>
-<div class="tucuman">
+<div class="tucuman" data-aos="zoom-in">
     <img class="foto-noticia" src="assets/demichelis.jpg" alt="martin demichelis, director técnico de river plate">
     <div class="dos-textos-tucuman">
         <p class="titulo-noticia"> EL POSIBLE EQUIPO ALTERNATIVO PARA VISITAR A ATLÉTICO TUCUMÁN </p>
@@ -141,5 +142,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

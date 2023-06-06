@@ -1,0 +1,9 @@
+@keyframes animacion-historia{
+    0%{
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

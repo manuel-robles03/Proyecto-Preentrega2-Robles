@@ -30,11 +30,19 @@
             object-position: center;
             border-radius: 5px;
     }
+    .carousel-item{
+        padding-top: 10px;
+    }
+    .texto-index{
+        font-size: 8px;
+        padding-bottom: 0px;
+    }
     .accesos{
-        padding: 15px;
+        padding: 9px;
         width: 100%;
-        font-size: 15px;
+        font-size: 9px;
         text-align: center;
+        border-radius: 20px;
     }
     .ubicacion{
         flex-direction: column;
@@ -42,6 +50,7 @@
     .mapa-estadio{
         width: 100%;
         padding: 15px 15px;
+        height: 300px;
     }
     .entrada-estadio{
         font-size:small;
@@ -55,6 +64,7 @@
     .titulo-noticia{
         font-size: medium;
         font-weight: 800;
+        text-align: center;
     }
     .noticias{
         justify-content: center;
@@ -89,12 +99,74 @@
         flex-wrap: wrap;
         padding: 10px;
     }
+    .texto-historia{
+        font-size: 12px;
+    }
+    .box{
+        padding: 5px;
+    }
+    .imagen-historia{
+        @include img (280px, 190px, cover, center);
+    }
     .imagen-demichelis{
         width: 100%;
         object-fit: contain;
         object-position: right;
     }
     .texto-demichelis-presentacion{
-        font-size: small;
+        font-size: 10px;
+    }
+}
+@media (max-width:480px){
+    .video-madrid{
+        height: 300px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .texto-final-madrid{
+        font-size:x-small;
+        width: 100%;
+    }
+    .logros{
+        width: 100%;
+        padding: 5px;
+    }
+    .imagen-logros{
+        @include img (150px, 120px, cover, center);
+    }
+    .titulo-logros{
+        font-size:  small;
+        font-weight: 700;
+        text-align: center;
+    }
+    .texto-logros{
+        font-size: 8px;
+        width: 200px;
+    }
+    .ultimo-texto-logros{
+        font-size: 16px;
+        width: 100%;
+    }
+}
+@media (max-width:480px){
+    .escudos{
+        width: 170px;
+    }
+    .datos-partido{
+        font-size: 8px;
+        width: 100px;
+    }
+    .partidos{
+        height: auto;
+        padding: 20px 20px;
+        gap: 30px;
+    }
+    .mas-partidos{
+        font-size: 9px;
+        padding-bottom: 20px;
+    }
+    .ultimo-texto-contacto{
+        font-size: 10px;
+        width: 100%;
     }
 }

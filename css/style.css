@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+@keyframes animacion-historia {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .bg-personalizado {
   display: flex;
   justify-content: space-between;
@@ -13,23 +22,25 @@
 }
 
 .nav-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  list-style-type: none;
+  padding: 15px;
+  transition: 0.8;
 }
 
 .nav-link {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  border-radius: 5px;
-  transition: 0.8s;
-  padding: 5px;
+  border: transparent;
+  transition: 0.5s;
+  text-align: center;
+  padding: 0;
 }
 
 .nav-link:hover {
   color: white;
-  background-color: rgb(44, 43, 43);
+  border-bottom: solid 3px rgb(44, 43, 43);
+  transform: scale(1.1, 1.1);
 }
 
 .navbar-toggler {
@@ -41,10 +52,6 @@
   width: 20px;
   height: 20px;
   object-position: center;
-}
-
-.navbar-nav {
-  gap: 20px;
 }
 
 .escudo-navbar {
@@ -104,6 +111,7 @@ main {
   border-radius: 5px;
   object-fit: cover;
   object-position: center;
+  padding-top: 30px;
 }
 
 .monumental {
@@ -111,6 +119,16 @@ main {
   z-index: 1;
   position: center;
   background-position: center;
+}
+
+.texto-index {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .accesos h2 {
@@ -128,8 +146,9 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0;
+  transition: 1s;
 }
 
 .entrada-estadio {
@@ -172,10 +191,10 @@ main {
 .sponsor {
   border: transparent;
   border-radius: 5px;
-  transition: 1s;
+  transition: 0.8s;
 }
-
 .sponsor:hover {
+  transform: scale(1.1, 1.1);
   background-color: rgba(170, 170, 170, 0.603);
 }
 
@@ -262,7 +281,7 @@ main {
   padding: 30px;
 }
 
-.imagen {
+.imagen-historia {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -284,84 +303,46 @@ main {
 }
 
 .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
   background-color: rgba(139, 139, 139, 0.658);
   border-radius: 5px;
   padding: 10px;
 }
 
 .fundacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
   grid-area: p1;
 }
 
 .primer-estadio {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
   grid-area: p2;
 }
 
 .la-maquina {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
   grid-area: p3;
 }
 
 .primer-monumental {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
   grid-area: p4;
 }
 
 .primera-libertadores {
-  display: flex;
-  flex-direction: column;
   grid-area: s1;
 }
 
 .segunda-libertadores {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
   grid-area: s2;
 }
 
 .descenso {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
   grid-area: s3;
 }
 
 .gallardo {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
   grid-area: s4;
 }
 
@@ -486,6 +467,10 @@ main {
 .partido {
   display: flex;
   flex-direction: column;
+  transition: 1s;
+}
+.partido:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .partidos {
@@ -528,6 +513,7 @@ main {
   background-repeat: no-repeat;
   object-position: center;
   background-position: center;
+  border-radius: 5px;
   height: 700px;
 }
 
@@ -536,8 +522,9 @@ main {
 }
 
 .boton {
-  background-color: rgb(185, 0, 0);
+  background-color: rgb(44, 43, 43);
   color: white;
+  font-weight: 500;
 }
 
 #boton {
@@ -585,11 +572,19 @@ main {
     object-position: center;
     border-radius: 5px;
   }
+  .carousel-item {
+    padding-top: 10px;
+  }
+  .texto-index {
+    font-size: 8px;
+    padding-bottom: 0px;
+  }
   .accesos {
-    padding: 15px;
+    padding: 9px;
     width: 100%;
-    font-size: 15px;
+    font-size: 9px;
     text-align: center;
+    border-radius: 20px;
   }
   .ubicacion {
     flex-direction: column;
@@ -597,6 +592,7 @@ main {
   .mapa-estadio {
     width: 100%;
     padding: 15px 15px;
+    height: 300px;
   }
   .entrada-estadio {
     font-size: small;
@@ -610,6 +606,7 @@ main {
   .titulo-noticia {
     font-size: medium;
     font-weight: 800;
+    text-align: center;
   }
   .noticias {
     justify-content: center;
@@ -640,13 +637,81 @@ main {
     flex-wrap: wrap;
     padding: 10px;
   }
+  .texto-historia {
+    font-size: 12px;
+  }
+  .box {
+    padding: 5px;
+  }
+  .imagen-historia {
+    width: 280px;
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+  }
   .imagen-demichelis {
     width: 100%;
     object-fit: contain;
     object-position: right;
   }
   .texto-demichelis-presentacion {
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .video-madrid {
+    height: 300px;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .texto-final-madrid {
+    font-size: x-small;
+    width: 100%;
+  }
+  .logros {
+    width: 100%;
+    padding: 5px;
+  }
+  .imagen-logros {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .titulo-logros {
     font-size: small;
+    font-weight: 700;
+    text-align: center;
+  }
+  .texto-logros {
+    font-size: 8px;
+    width: 200px;
+  }
+  .ultimo-texto-logros {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .escudos {
+    width: 170px;
+  }
+  .datos-partido {
+    font-size: 8px;
+    width: 100px;
+  }
+  .partidos {
+    height: auto;
+    padding: 20px 20px;
+    gap: 30px;
+  }
+  .mas-partidos {
+    font-size: 9px;
+    padding-bottom: 20px;
+  }
+  .ultimo-texto-contacto {
+    font-size: 10px;
+    width: 100%;
   }
 }
 

@@ -10,6 +10,10 @@
 .partido{
     display: flex;
     flex-direction: column;
+    transition: 1s;
+    &:hover{
+        transform: scale(1.1,1.1);
+    }
 }
 .partidos{
     @include display-flex (row, space-evenly, center, nowrap, 0);

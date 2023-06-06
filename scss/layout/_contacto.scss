@@ -8,14 +8,16 @@
     background-repeat: no-repeat;
     object-position: center;
     background-position: center;
+    border-radius: 5px;
     height: 700px;
 }
 .campo{
     padding: 8px;
 }
 .boton{
-    background-color: $main-color;
+    background-color: $secondary-color;
     color: white;
+    font-weight: 500;
 }
 #boton{
     display: flex;

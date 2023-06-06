@@ -19,6 +19,7 @@ main{
     border-radius: 5px;
     object-fit: cover;
     object-position: center;
+    padding-top: 30px;
 }
 .monumental{
     object-fit: cover;
@@ -26,7 +27,15 @@ main{
     position: center;
     background-position: center;
 }
-
+.texto-index{
+    color: $light-color;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: $main-font;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px; 
+}
 .accesos h2{
     text-align: center;
     font-weight: bolder;
@@ -36,7 +45,8 @@ main{
     padding: 30px;
 }
 .ubicacion{
-    @include display-flex (row, center, center, wrap, 0);
+    @include display-flex (row, center, center, nowrap, 0);
+    transition: 1s;
 }
 .entrada-estadio{
     color: $light-color;
@@ -65,10 +75,11 @@ main{
 .sponsor{
     border: transparent;
     border-radius: 5px;
-    transition: 1s;
-}
-.sponsor:hover{
-    background-color: rgba(170, 170, 170, 0.603);
+    transition: 0.8s;
+    &:hover{
+        transform: scale(1.1,1.1);
+        background-color: rgba(170, 170, 170, 0.603);
+    }
 }
 .noticias{
     @include display-flex (row, center, center, wrap, 0);
