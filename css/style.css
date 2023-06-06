@@ -391,6 +391,10 @@ main {
   padding-top: 50px;
 }
 
+#todos-logros {
+  overflow: hidden;
+}
+
 .logros {
   padding: 30px;
   display: flex;
