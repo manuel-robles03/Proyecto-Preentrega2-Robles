@@ -355,7 +355,8 @@ main {
 #todos-logros {
   overflow: hidden;
 }
-#todos-logros .logros {
+
+.logros {
   padding: 30px;
   display: flex;
   flex-direction: row;
@@ -365,7 +366,7 @@ main {
   gap: 0;
   width: 100%;
 }
-#todos-logros:nth-child(odd) {
+.logros:nth-child(odd) {
   flex-direction: row-reverse;
 }
 
@@ -666,9 +667,8 @@ main {
   }
   .mas-partidos {
     font-size: 9px;
-    padding-bottom: 33px;
-    padding-top: 33px;
-    }
+    padding-bottom: 20px;
+  }
   .ultimo-texto-contacto {
     font-size: 10px;
     width: 100%;

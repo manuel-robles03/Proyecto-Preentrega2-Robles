@@ -1,12 +1,12 @@
-.texto-final-madrid{
-    color: $light-color;
-    font-family: $main-font;
-    font-size:medium;
-    text-align: justify; 
-    font-weight: 700;
-    padding-top: 10px;
-    width: 94%;
-}
+  .texto-final-madrid{
+        color: $light-color;
+        font-family: $main-font;
+        font-size:medium;
+        text-align: justify; 
+        font-weight: 700;
+        padding-top: 10px;
+        width: 94%;
+    }
 .final-madrid{
     @include display-flex (column, center, center, nowrap, 0);
     .video-madrid{
@@ -16,15 +16,15 @@
 
 #todos-logros{
     overflow: hidden;
-    .logros{
-        padding: 30px;
-        @include display-flex (row, center, center, nowrap, 0);
-        width: 100%;}
+}
+.logros{
+    padding: 30px;
+    @include display-flex (row, center, center, nowrap, 0);
+    width: 100%;
     &:nth-child(odd){
         flex-direction: row-reverse;
     }
 }
-
 .titulo-logros{
     color: $main-color;
     font-family: $secondary-font;
