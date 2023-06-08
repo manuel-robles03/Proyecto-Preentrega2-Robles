@@ -6,15 +6,6 @@
   box-sizing: border-box;
 }
 
-@keyframes animacion-historia {
-  0% {
-    transform: translateX(-150%);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .bg-personalizado {
   display: flex;
   justify-content: space-between;
@@ -494,6 +485,7 @@ main {
   text-align: center;
   justify-content: center;
   font-family: "Open Sans", sans-serif;
+  font-size: small;
 }
 
 .formulario {
