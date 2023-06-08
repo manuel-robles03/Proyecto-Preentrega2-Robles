@@ -11,26 +11,24 @@
   justify-content: space-between;
   background-color: rgb(185, 0, 0);
 }
-
-.nav-item {
+.bg-personalizado .nav-item {
   list-style-type: none;
-  padding: 15px;
+  padding: 20px;
   transition: 0.8;
 }
-
-.nav-link {
+.bg-personalizado .nav-item .nav-link {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   border: transparent;
   transition: 0.5s;
   text-align: center;
-  padding: 0;
+  padding: 5px;
 }
-
-.nav-link:hover {
+.bg-personalizado .nav-item .nav-link:hover {
   color: white;
-  border-bottom: solid 3px rgb(44, 43, 43);
+  background-color: rgb(44, 43, 43);
+  border-radius: 5px;
   transform: scale(1.1, 1.1);
 }
 
@@ -38,8 +36,7 @@
   width: 46px;
   height: 35px;
 }
-
-.navbar-toggler-icon {
+.navbar-toggler .navbar-toggler-icon {
   width: 20px;
   height: 20px;
   object-position: center;
@@ -56,27 +53,23 @@ footer {
   background-color: rgb(44, 43, 43);
   padding-bottom: 30px;
 }
-
-.footer {
+footer .footer {
   display: flex;
   justify-content: space-between;
 }
-
-.red {
-  border: transparent;
-  border-radius: 5px;
-  transition: 1s;
-}
-
-.red:hover {
-  background-color: rgba(170, 170, 170, 0.603);
-}
-
-.redes-sociales {
+footer .footer .redes-sociales {
   display: flex;
   align-items: center;
   gap: 15px;
   padding-right: 20px;
+}
+footer .footer .redes-sociales .red {
+  border: transparent;
+  border-radius: 5px;
+  transition: 1s;
+}
+footer .footer .redes-sociales .red:hover {
+  background-color: rgba(170, 170, 170, 0.603);
 }
 
 main {
@@ -122,40 +115,6 @@ main {
   padding-bottom: 30px;
 }
 
-.accesos h2 {
-  text-align: center;
-  font-weight: bolder;
-}
-
-.mapa-estadio {
-  width: 100%;
-  padding: 30px;
-}
-
-.ubicacion {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
-  transition: 1s;
-}
-
-.entrada-estadio {
-  color: white;
-  font-size: xx-large;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0;
-}
-
 .accesos {
   background-color: rgb(185, 0, 0);
   color: white;
@@ -172,19 +131,46 @@ main {
   margin-top: 30px;
 }
 
+.ubicacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  transition: 1s;
+}
+.ubicacion .mapa-estadio {
+  width: 100%;
+  padding: 30px;
+}
+
+.entrada-estadio {
+  color: white;
+  font-size: xx-large;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
 .logos-sponsors {
   display: flex;
   justify-content: space-around;
   padding: 10px;
   flex-wrap: wrap;
 }
-
-.sponsor {
+.logos-sponsors .sponsor {
   border: transparent;
   border-radius: 5px;
   transition: 0.8s;
 }
-.sponsor:hover {
+.logos-sponsors .sponsor:hover {
   transform: scale(1.1, 1.1);
   background-color: rgba(170, 170, 170, 0.603);
 }
@@ -197,18 +183,11 @@ main {
   flex-wrap: wrap;
   gap: 0;
 }
-
-.foto-noticia {
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.partido-contra-independiente {
+.noticias .partido-contra-independiente {
   display: flex;
   padding-top: 10px;
 }
-
-.dos-textos-independiente {
+.noticias .partido-contra-independiente .dos-textos-independiente {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -216,6 +195,27 @@ main {
   flex-wrap: wrap;
   gap: 0;
   padding-left: 5px;
+}
+.noticias .tucuman {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.noticias .tucuman {
+  padding: 15px;
+}
+.noticias .tucuman .dos-textos-tucuman {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+  padding-right: 5px;
+}
+
+.foto-noticia {
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .texto-noticia {
@@ -244,25 +244,6 @@ main {
   font-size: xx-large;
 }
 
-.tucuman {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.tucuman {
-  padding: 15px;
-}
-
-.dos-textos-tucuman {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0;
-  padding-right: 5px;
-}
-
 .historia {
   display: grid;
   grid-template-columns: repeat(auto, 1fr);
@@ -270,6 +251,41 @@ main {
   grid-template-areas: "p1 p2 p3 p4" "s1 s2 s3 s4";
   gap: 10px;
   padding: 30px;
+}
+.historia .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  background-color: rgba(139, 139, 139, 0.658);
+  border-radius: 5px;
+  padding: 10px;
+}
+.historia .fundacion {
+  grid-area: p1;
+}
+.historia .primer-estadio {
+  grid-area: p2;
+}
+.historia .la-maquina {
+  grid-area: p3;
+}
+.historia .primer-monumental {
+  grid-area: p4;
+}
+.historia .primera-libertadores {
+  grid-area: s1;
+}
+.historia .segunda-libertadores {
+  grid-area: s2;
+}
+.historia .descenso {
+  grid-area: s3;
+}
+.historia .gallardo {
+  grid-area: s4;
 }
 
 .imagen-historia {
@@ -293,50 +309,6 @@ main {
   padding-top: 5px;
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
-  background-color: rgba(139, 139, 139, 0.658);
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.fundacion {
-  grid-area: p1;
-}
-
-.primer-estadio {
-  grid-area: p2;
-}
-
-.la-maquina {
-  grid-area: p3;
-}
-
-.primer-monumental {
-  grid-area: p4;
-}
-
-.primera-libertadores {
-  grid-area: s1;
-}
-
-.segunda-libertadores {
-  grid-area: s2;
-}
-
-.descenso {
-  grid-area: s3;
-}
-
-.gallardo {
-  grid-area: s4;
-}
-
 .presentacion-demichelis {
   display: flex;
   flex-direction: column;
@@ -346,8 +318,7 @@ main {
   gap: 0;
   padding-top: 15px;
 }
-
-.imagen-demichelis {
+.presentacion-demichelis .imagen-demichelis {
   border-radius: 5px;
   border: solid rgb(168, 168, 168);
 }
@@ -377,16 +348,14 @@ main {
   flex-wrap: nowrap;
   gap: 0;
 }
-
-.video-madrid {
+.final-madrid .video-madrid {
   padding-top: 50px;
 }
 
 #todos-logros {
   overflow: hidden;
 }
-
-.logros {
+#todos-logros .logros {
   padding: 30px;
   display: flex;
   flex-direction: row;
@@ -396,8 +365,7 @@ main {
   gap: 0;
   width: 100%;
 }
-
-.logros:nth-child(odd) {
+#todos-logros:nth-child(odd) {
   flex-direction: row-reverse;
 }
 
@@ -444,6 +412,24 @@ main {
   padding: 15px;
 }
 
+.partidos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  height: 500px;
+}
+.partidos .partido {
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+}
+.partidos .partido:hover {
+  transform: scale(1.1, 1.1);
+}
+
 .datos-partido {
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -459,25 +445,6 @@ main {
   width: 300px;
 }
 
-.partido {
-  display: flex;
-  flex-direction: column;
-  transition: 1s;
-}
-.partido:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.partidos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
-  height: 500px;
-}
-
 .mas-partidos {
   color: white;
   text-decoration: underline;
@@ -486,16 +453,6 @@ main {
   justify-content: center;
   font-family: "Open Sans", sans-serif;
   font-size: small;
-}
-
-.formulario {
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
 }
 
 .contacto {
@@ -512,21 +469,27 @@ main {
   border-radius: 5px;
   height: 700px;
 }
-
-.campo {
+.contacto .formulario {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+.contacto .formulario .campo {
   padding: 8px;
 }
-
-.boton {
-  background-color: rgb(44, 43, 43);
-  color: white;
-  font-weight: 500;
-}
-
-#boton {
+.contacto .formulario #boton {
   display: flex;
   align-self: center;
   justify-content: center;
+}
+.contacto .formulario #boton .boton {
+  background-color: rgb(44, 43, 43);
+  color: white;
+  font-weight: 500;
 }
 
 .ultimo-texto-contacto {
@@ -591,7 +554,7 @@ main {
     height: 300px;
   }
   .entrada-estadio {
-    font-size: small;
+    font-size: x-small;
     text-align: center;
   }
   .sponsor {
@@ -703,8 +666,9 @@ main {
   }
   .mas-partidos {
     font-size: 9px;
-    padding-bottom: 20px;
-  }
+    padding-bottom: 33px;
+    padding-top: 33px;
+    }
   .ultimo-texto-contacto {
     font-size: 10px;
     width: 100%;

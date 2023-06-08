@@ -9,20 +9,22 @@
 }
 .final-madrid{
     @include display-flex (column, center, center, nowrap, 0);
+    .video-madrid{
+        padding-top: 50px;
+    }
 }
-.video-madrid{
-    padding-top: 50px;
-}
+
 #todos-logros{
     overflow: hidden;
+    .logros{
+        padding: 30px;
+        @include display-flex (row, center, center, nowrap, 0);
+        width: 100%;}
+    &:nth-child(odd){
+        flex-direction: row-reverse;
+    }
 }
-.logros{
-    padding: 30px;
-    @include display-flex (row, center, center, nowrap, 0);
-    width: 100%;}
-.logros:nth-child(odd){
-    flex-direction: row-reverse;
-}
+
 .titulo-logros{
     color: $main-color;
     font-family: $secondary-font;

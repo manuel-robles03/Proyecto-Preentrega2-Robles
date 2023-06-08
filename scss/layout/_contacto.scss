@@ -1,7 +1,4 @@
-.formulario{
-    border-radius: 5px;
-    @include display-flex (column, center, center, nowrap, 0);
-}
+
 .contacto{
     @include display-flex (row, center, center, nowrap, 0);
     background-image: url(../assets/fondo.formulario.jpg);
@@ -10,19 +7,23 @@
     background-position: center;
     border-radius: 5px;
     height: 700px;
-}
-.campo{
-    padding: 8px;
-}
-.boton{
-    background-color: $secondary-color;
-    color: white;
-    font-weight: 500;
-}
-#boton{
-    display: flex;
-    align-self: center;
-    justify-content: center;
+    .formulario{
+        border-radius: 5px;
+        @include display-flex (column, center, center, nowrap, 0);
+        .campo{
+            padding: 8px;
+        }
+        #boton{
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            .boton{
+                background-color: $secondary-color;
+                color: white;
+                font-weight: 500;
+            }
+        }
+    }
 }
 .ultimo-texto-contacto{
     color: white;

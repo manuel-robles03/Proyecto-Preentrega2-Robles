@@ -36,26 +36,6 @@ main{
     padding-top: 10px;
     padding-bottom: 30px; 
 }
-.accesos h2{
-    text-align: center;
-    font-weight: bolder;
-}
-.mapa-estadio{
-    width: 100%;
-    padding: 30px;
-}
-.ubicacion{
-    @include display-flex (row, center, center, nowrap, 0);
-    transition: 1s;
-}
-.entrada-estadio{
-    color: $light-color;
-    font-size:xx-large;
-    font-family: $main-font;
-    font-weight: bold;
-    text-align: center;
-    @include display-flex (row, center, center, wrap, 0);
-}
 .accesos{
     background-color: $main-color;
     color: $light-color;
@@ -66,35 +46,62 @@ main{
     @include display-flex (row, center, center, wrap, 0);
     margin-top: 30px;
 }
+.ubicacion{
+    @include display-flex (row, center, center, nowrap, 0);
+    transition: 1s;
+    .mapa-estadio{
+        width: 100%;
+        padding: 30px;
+    }
+}
+.entrada-estadio{
+    color: $light-color;
+    font-size:xx-large;
+    font-family: $main-font;
+    font-weight: bold;
+    text-align: center;
+    @include display-flex (row, center, center, wrap, 0);
+}
 .logos-sponsors{
     display: flex;
     justify-content: space-around;
     padding: 10px;
     flex-wrap: wrap;
-}
-.sponsor{
-    border: transparent;
-    border-radius: 5px;
-    transition: 0.8s;
-    &:hover{
-        transform: scale(1.1,1.1);
-        background-color: rgba(170, 170, 170, 0.603);
+    .sponsor{
+        border: transparent;
+        border-radius: 5px;
+        transition: 0.8s;
+        &:hover{
+            transform: scale(1.1,1.1);
+            background-color: rgba(170, 170, 170, 0.603);
+        }
     }
 }
 .noticias{
     @include display-flex (row, center, center, wrap, 0);
+    .partido-contra-independiente{
+        display: flex;
+        padding-top: 10px;
+        .dos-textos-independiente{
+            @include display-flex (column, center, center, wrap, 0);
+            padding-left: 5px;
+        }
+    }
+    .tucuman{
+        display: flex;
+        flex-direction:row-reverse
+    }
+    .tucuman{
+        padding: 15px;
+        .dos-textos-tucuman{
+            @include display-flex (column, center, center, wrap, 0);
+            padding-right: 5px;
+        }
+    }
 }
 .foto-noticia{
     object-fit: cover;
     border-radius: 5px;
-}
-.partido-contra-independiente{
-    display: flex;
-    padding-top: 10px;
-}
-.dos-textos-independiente{
-    @include display-flex (column, center, center, wrap, 0);
-    padding-left: 5px;
 }
 .texto-noticia{
     color: $light-color;
@@ -110,14 +117,4 @@ main{
     @include display-flex (row, center, center, wrap, 0);
     font-size: xx-large;
 }
-.tucuman{
-    display: flex;
-    flex-direction:row-reverse
-}
-.tucuman{
-    padding: 15px;
-}
-.dos-textos-tucuman{
-    @include display-flex (column, center, center, wrap, 0);
-    padding-right: 5px;
-}
+
